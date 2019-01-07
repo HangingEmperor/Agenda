@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHome">
+    <children>
+      <Pane layoutY="-6.0" prefHeight="33.0" prefWidth="800.0" style="-fx-background-color: #313131;">
+         <children>
+            <ImageView fx:id="imageviewClose" fitHeight="21.0" fitWidth="17.0" layoutX="777.0" layoutY="11.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Imágenes/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="1.0" layoutY="27.0" prefHeight="575.0" prefWidth="800.0" style="-fx-background-color: #3A3A3A;" />
+      <Pane fx:id="panelDisplayContact" layoutX="325.0" layoutY="89.0" prefHeight="514.0" prefWidth="477.0" style="-fx-background-color: #3A3A3A;">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="148.0" layoutX="1.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="labelNameComplete" layoutX="157.0" layoutY="14.0" style="-fx-text-fill: white;" text="labelNameComplete">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="148.0" layoutY="43.0" prefHeight="0.0" prefWidth="309.0" />
+            <Label fx:id="labelPhone" layoutX="157.0" layoutY="56.0" style="-fx-text-fill: white;" text="labelPhone">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMobile" layoutX="287.0" layoutY="56.0" style="-fx-text-fill: white;" text="labelMobile">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelElectronicMail" layoutX="200.0" layoutY="86.0" style="-fx-text-fill: white;" text="labelElectronicMail">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNickName" layoutX="25.0" layoutY="175.0" style="-fx-text-fill: white;" text="labelNickName">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCompanyAndPosition" layoutX="158.0" layoutY="121.0" style="-fx-text-fill: white;" text="labelCompanyAndPosition">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelAddress" layoutX="158.0" layoutY="218.0" style="-fx-text-fill: white;" text="labelAddress">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelPostalCode" layoutX="158.0" layoutY="242.0" style="-fx-text-fill: white;" text="labelPostalCode">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCityStateCountry" layoutX="158.0" layoutY="264.0" style="-fx-text-fill: white;" text="labelCityStateCountry">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="356.0" style="-fx-text-fill: white;" text="Website:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfieldWebsite" editable="false" layoutX="238.0" layoutY="355.0" prefHeight="25.0" prefWidth="216.0" />
+            <Label layoutX="158.0" layoutY="396.0" style="-fx-text-fill: white;" text="Facebook:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="432.0" style="-fx-text-fill: white;" text="Twitter:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="468.0" style="-fx-text-fill: white;" text="Instagram:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfieldFacebook" editable="false" layoutX="250.0" layoutY="395.0" prefHeight="25.0" prefWidth="204.0" />
+            <TextField fx:id="textfieldTwitter" editable="false" layoutX="228.0" layoutY="431.0" prefHeight="25.0" prefWidth="225.0" />
+            <TextField fx:id="textfieldInstagram" editable="false" layoutX="250.0" layoutY="467.0" prefHeight="25.0" prefWidth="204.0" />
+         </children>
+      </Pane>
+      <Button fx:id="buttonCreateContact" layoutX="24.0" layoutY="53.0" mnemonicParsing="false" onAction="#createContact" text="Crear contacto" />
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="89.0" prefHeight="521.0" prefWidth="301.0" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="tableColumnName" prefWidth="300.0" text="Contacts" />
+         </columns>
+      </TableView>
+      <Separator layoutX="317.0" layoutY="89.0" orientation="VERTICAL" prefHeight="521.0" prefWidth="8.0" />
+    </children>
+</AnchorPane>

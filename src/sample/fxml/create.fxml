@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerContact">
+   <children>
+      <Pane layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="buttonCloseWindow" layoutX="544.0" mnemonicParsing="false" onAction="#closeWindow" text="Cerrar" />
+         </children>
+      </Pane>
+      <Pane layoutY="27.0" prefHeight="494.0" prefWidth="600.0" style="-fx-background-color: #3A3A3A;" />
+      <Button fx:id="buttonSave" defaultButton="true" layoutX="542.0" layoutY="487.0" mnemonicParsing="false" onAction="#createContact" text="Save" />
+      <Button fx:id="buttonCancel" cancelButton="true" layoutX="470.0" layoutY="487.0" onAction="#closeWindow" text="Cancel" />
+      <TextField fx:id="textfieldInstagram" layoutX="101.0" layoutY="467.0" prefHeight="25.0" prefWidth="164.0" />
+      <Label layoutX="23.0" layoutY="469.0" style="-fx-text-fill: white;" text="Instagram:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="428.0" style="-fx-text-fill: white;" text="Twitter:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldTwitter" layoutX="101.0" layoutY="426.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="textfieldFacebook" layoutX="380.0" layoutY="429.0" />
+      <Label layoutX="302.0" layoutY="431.0" style="-fx-text-fill: white;" text="Facebook:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldWebsite" layoutX="381.0" layoutY="386.0" />
+      <Label layoutX="303.0" layoutY="388.0" style="-fx-text-fill: white;" text="Website:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="54.0" style="-fx-text-fill: white;" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldName" layoutX="381.0" layoutY="49.0" />
+      <Label layoutX="301.0" layoutY="94.0" style="-fx-text-fill: white;" text="Lastname:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldLastName" layoutX="381.0" layoutY="91.0" />
+      <Label layoutX="301.0" layoutY="135.0" style="-fx-text-fill: white;" text="Birthday:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickerBirthday" layoutX="381.0" layoutY="132.0" prefHeight="25.0" prefWidth="206.0" />
+      <Label layoutX="301.0" layoutY="179.0" style="-fx-text-fill: white;" text="Adress:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldAdress" layoutX="381.0" layoutY="176.0" prefHeight="25.0" prefWidth="206.0" />
+      <Label layoutX="301.0" layoutY="222.0" style="-fx-text-fill: white;" text="City:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="261.0" style="-fx-text-fill: white;" text="State:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="301.0" style="-fx-text-fill: white;" text="Country:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldCity" layoutX="381.0" layoutY="219.0" />
+      <TextField fx:id="textfieldState" layoutX="381.0" layoutY="257.0" />
+      <TextField fx:id="textfieldCountry" layoutX="381.0" layoutY="298.0" />
+      <Label layoutX="302.0" layoutY="343.0" style="-fx-text-fill: white;" text="ZIP Code:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldCarreer" layoutX="380.0" layoutY="341.0" />
+      <Label layoutX="24.0" layoutY="250.0" style="-fx-text-fill: white;" text="Phone:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldPhone" layoutX="104.0" layoutY="247.0" promptText="555-55-55" />
+      <TextField fx:id="textfieldMobile" layoutX="104.0" layoutY="288.0" promptText="+1-686-555-55-55" />
+      <Label layoutX="23.0" layoutY="292.0" style="-fx-text-fill: white;" text="Mobile:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldEmail" layoutX="105.0" layoutY="331.0" promptText="example@example.com" />
+      <Label layoutX="23.0" layoutY="335.0" style="-fx-text-fill: white;" text="Email:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="378.0" style="-fx-text-fill: white;" text="Nickname:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldNickname" layoutX="104.0" layoutY="373.0" />
+      <Button fx:id="buttonImportImage" layoutX="23.0" layoutY="207.0" mnemonicParsing="false" onAction="#importImage" text="Import an image" />
+      <Separator layoutX="277.0" layoutY="47.0" orientation="VERTICAL" prefHeight="369.0" prefWidth="11.0" />
+      <ImageView fx:id="imageView" fitHeight="143.0" fitWidth="242.0" layoutX="23.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
