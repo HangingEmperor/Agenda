@@ -6,8 +6,7 @@
 }
 
 .table-row-cell:odd {
-    -fx-background-color: #3B3A3A;
-    -fx-text-fill: white;
+    -fx-background-color: #A4A4A4;
 }
 
 .table-cell {

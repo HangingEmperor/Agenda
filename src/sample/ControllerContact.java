@@ -86,6 +86,8 @@ public class ControllerContact {
         Boolean createProfile = false;
         createProfile = true;
 
+        System.out.println(datepickerBirthday.getPromptText());
+        System.out.println(datepickerBirthday.getAccessibleText());
         if (createProfile) {
             Person person = new Person(Integer.toString(Database.getListPerson().size()), textfieldName.getText(),
                     textfieldLastName.getText(), new Button(textfieldName.getText() + " " + textfieldLastName.getText()),

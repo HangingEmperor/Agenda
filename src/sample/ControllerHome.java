@@ -57,7 +57,13 @@ public class ControllerHome implements Initializable {
     @FXML
     private Label labelNickName;
     @FXML
+    private Label labelBirthday;
+    @FXML
     private ImageView imageviewClose;
+    @FXML
+    private ImageView imageviewMobileIcon;
+    @FXML
+    private ImageView imageviewPhoneIcon;
     @FXML
     private TableView<Person> tableView;
     @FXML
@@ -88,6 +94,16 @@ public class ControllerHome implements Initializable {
                 + Database.getListPerson().get(id).getCountry());
         labelAddress.setText(Database.getListPerson().get(id).getAddress());
         labelPostalCode.setText(Database.getListPerson().get(id).getPostalCode());
+        labelCompanyAndPosition.setText(Database.getListPerson().get(id).getCompany() + ", "
+                + Database.getListPerson().get(id).getPosition());
+        labelBirthday.setText(Database.getListPerson().get(id).getBirthday());
+
+        textfieldFacebook.setText(Database.getListPerson().get(id).getSocialNetworksFacebook());
+        textfieldInstagram.setText(Database.getListPerson().get(id).getSocialNetworksInstagram());
+        textfieldTwitter.setText(Database.getListPerson().get(id).getSocialNetworksTwitter());
+        textfieldWebsite.setText(Database.getListPerson().get(id).getWebsite());
+
+        imageView.setImage(Database.getListPerson().get(id).getProfilePicture());
 
         panelDisplayContact.setVisible(true);
     }
@@ -133,6 +149,10 @@ public class ControllerHome implements Initializable {
 
         Image image = new Image(getClass().getResourceAsStream("img/close.png"));
         imageviewClose.setImage(image);
+        image = new Image(getClass().getResourceAsStream("img/phone.png"));
+        imageviewPhoneIcon.setImage(image);
+        image = new Image(getClass().getResourceAsStream("img/mobile.png"));
+        imageviewMobileIcon.setImage(image);
 
         panelDisplayContact.setVisible(false);
     }
