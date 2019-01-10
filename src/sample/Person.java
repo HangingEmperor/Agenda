@@ -21,6 +21,7 @@ public class Person {
     private String mobile;
     private String notes;
 
+    /**/
     private String company;
     private String position;
 
